@@ -103,7 +103,7 @@ public class info extends AppCompatActivity implements AdapterView.OnItemClickLi
             } else {
                 crsr = db.query(TABLE_GRADES, null, null, null, null, null, null);
                 int co1 = crsr.getColumnIndex(GRADES.KEY_ID);
-                int co2 = crsr.getColumnIndex(GRADES.NAME);
+                int co2 = crsr.getColumnIndex(GRADES.GNAME);
                 int co3 = crsr.getColumnIndex(GRADES.QUARTER);
                 int co4 = crsr.getColumnIndex(GRADES.GRADE);
                 int co5 = crsr.getColumnIndex(GRADES.SUBJECT);

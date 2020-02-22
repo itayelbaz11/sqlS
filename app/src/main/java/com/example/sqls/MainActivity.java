@@ -77,17 +77,16 @@ public class MainActivity extends AppCompatActivity {
      * @param view
      */
     public void sndsub(View view) {
-        String name,sub;
-        int g,q;
+        String name,sub,g,q;
 
 
         name = gname.getText().toString();
         sub=gsub.getText().toString();
-        g=Integer.parseInt(grade.getText().toString());
-        q=Integer.parseInt(gquarter.getText().toString());
+        g=grade.getText().toString();
+        q=gquarter.getText().toString();
 
         ContentValues cv = new ContentValues();
-        cv.put(GRADES.NAME, name);
+        cv.put(GRADES.GNAME, name);
         cv.put(GRADES.QUARTER,q);
         cv.put(GRADES.SUBJECT,sub);
         cv.put(GRADES.GRADE,g);

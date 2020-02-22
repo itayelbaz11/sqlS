@@ -124,7 +124,7 @@ public class sort extends AppCompatActivity implements AdapterView.OnItemClickLi
                 } else {
                     crsr=db.query(TABLE_GRADES, columns, selection, selectionArgs, groupBy, having, orderBy, limit);
                     int co1 = crsr.getColumnIndex(GRADES.KEY_ID);
-                    int co2 = crsr.getColumnIndex(GRADES.NAME);
+                    int co2 = crsr.getColumnIndex(GRADES.GNAME);
                     int co3 = crsr.getColumnIndex(GRADES.QUARTER);
                     int co4 = crsr.getColumnIndex(GRADES.GRADE);
                     crsr.moveToFirst();
